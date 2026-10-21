@@ -1,3 +1,4 @@
+createCrossword()
 function switchToTeacher() {
       // Find the link element by its ID
       var themeLink = document.getElementById('PageMode');
