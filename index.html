@@ -1,10 +1,40 @@
 <html>
   <head>
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link id="PageMode" rel="stylesheet" href="teacher.css">
     <title>
-      Адміністративне процесуальне право - Семінар 7
+      Адмін. процес - Семінар 7
     </title>
   </head>
   <body>
+    <img id="Title_Image" src="huuplogo.png" align="middle" style="display: block; margin-left: auto; margin-right: auto; height: 20%;">
+
     
+    
+      <div id="sidebar">
+
+      <button onclick="switchToTeacher()" class="teacher-button" type="button">
+        <p style="font-family: 'CurrentFont', sans-serif; color: #E0E0FF;">
+        Офіційний <br> режим
+        </p>
+      </button>
+      <button onclick="switchToStudent()" class="student-button" type="button">
+        <p style="font-family: 'CurrentFont', sans-serif; color: #F9E5D9;">
+          Веселий <br> режим
+        </p>
+      </button>
+
+      <button onclick="createCrossword()" class="crossword-button" type="button"> <p style="font-family: 'CurrentFont', sans-serif; color: #EEF4D7;" >Заспавнити <br> Кросворд</p></button>
+
+      <button onclick="checkAnswers()" class="check-button" type="button"> <p style="font-family: 'CurrentFont', sans-serif; color: #FFE2F5;" >Заспойлерити <br> відповідь</p></button>
+    </div>
+    <div class="middleman">
+      <div class="crossword" id="crossword"></div>
+
+      <div class="alphagrid" id="keysforboard"></div> <h3 class="keyboard-text">Треба перетягнути літери на кросворд</h3>
+    </div>
   </body>
 </html>
+
+
