@@ -1,0 +1,151 @@
+.teacher-button {
+  
+  background-image: url('teacherBTN.png');
+  background-size: cover; /* Ensures the image covers the entire button */
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 183px; 
+  height: 100px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.student-button {
+  
+  background-image: url('studentBTN.png');
+  background-size: cover; /* Ensures the image covers the entire button */
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 179px; 
+  height: 100px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.crossword-button {
+  
+  background-image: url('LimeBTN.png');
+  background-size: cover; /* Ensures the image covers the entire button */
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 183px; 
+  height: 100px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.check-button {
+  
+  background-image: url('PinkBTN.png');
+  background-size: cover; /* Ensures the image covers the entire button */
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 183px; 
+  height: 100px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.crossword {
+  display: grid;
+  grid-template-columns: repeat(24, 40px);
+  grid-template-rows: repeat(17, 40px);
+  width: fit-content;
+  margin-left: 180px;
+
+}
+
+.alphagrid {
+  display: grid;
+  grid-template-columns: repeat(11, 40px);
+  grid-template-rows: repeat(3, 40px);
+  width: fit-content;
+  margin-left: 180px;
+
+}
+
+.tile-slot {
+  position: relative; 
+  display: grid; 
+  place-items: center;
+}
+
+.Purple-tile {
+    width: 40px;
+    grid-area: 1 / 1; 
+    z-index: 1;        /* Keeps the image in the background */
+}
+
+.crossword-text {
+  position: absolute;
+  grid-area: 1 / 1;
+  z-index: 2;
+  
+  display: none;
+
+  /* Styling choices */
+  color: white;
+  font-family: 'CurrentFont', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.keyboard-text {
+  position: absolute;
+  grid-area: 1 / 1;
+  z-index: 2;
+
+  /* Styling choices */
+  color: white;
+  font-family: 'CurrentFont', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#tile-area {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid gray;
+}
+
+.random-tile {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    cursor: grab;
+}
+
+#sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    z-index: 10;
+}
+
+.middleman {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+body {
+    font-family: 'CurrentFont', CurrentFont, sans-serif;
+    background-image: url('GamingBG1.png');
+    background-size: cover;
+}
+
+@font-face {
+  font-family: 'CurrentFont'; /* The name you will use in your CSS */
+  src: url('soupofjustice.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
